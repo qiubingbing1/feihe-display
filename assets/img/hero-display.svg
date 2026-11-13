@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3E8EDE"/>
+      <stop offset="1" stop-color="#1D4F80"/>
+    </linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5AA7E8"/>
+      <stop offset="1" stop-color="#9CCBF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="620" fill="url(#bg)"/>
+  <!-- desk -->
+  <rect y="520" width="1000" height="100" fill="#123A5F" opacity="0.55"/>
+  <!-- big monitor -->
+  <rect x="170" y="120" width="480" height="300" rx="12" fill="#0E1620"/>
+  <rect x="184" y="134" width="452" height="272" rx="6" fill="url(#scr)"/>
+  <rect x="380" y="420" width="60" height="52" fill="#0E1620"/>
+  <rect x="320" y="472" width="180" height="16" rx="8" fill="#0E1620"/>
+  <!-- UI blocks on monitor -->
+  <rect x="210" y="160" width="180" height="14" rx="7" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="210" y="186" width="120" height="10" rx="5" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="210" y="220" width="90" height="62" rx="8" fill="#FFFFFF" opacity="0.28"/>
+  <rect x="312" y="220" width="90" height="62" rx="8" fill="#FFFFFF" opacity="0.42"/>
+  <rect x="414" y="220" width="90" height="62" rx="8" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="210" y="300" width="294" height="80" rx="10" fill="#FFFFFF" opacity="0.85"/>
+  <!-- small tv -->
+  <rect x="700" y="250" width="200" height="150" rx="10" fill="#0E1620"/>
+  <rect x="710" y="260" width="180" height="130" rx="6" fill="url(#scr)" opacity="0.9"/>
+  <rect x="785" y="400" width="30" height="26" fill="#0E1620"/>
+  <rect x="745" y="426" width="110" height="12" rx="6" fill="#0E1620"/>
+  <circle cx="800" cy="325" r="26" fill="#FFFFFF" opacity="0.85"/>
+  <path d="M792 313l22 12-22 12z" fill="#1D4F80"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="s6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3E8EDE"/><stop offset="1" stop-color="#7BB6E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#EAF3FB"/>
+  <!-- portrait-pivot pro monitor -->
+  <rect x="150" y="80" width="380" height="360" rx="12" fill="#101418"/>
+  <rect x="164" y="94" width="352" height="332" rx="4" fill="url(#s6)"/>
+  <!-- design tool UI -->
+  <rect x="186" y="116" width="328" height="26" rx="6" fill="#FFFFFF" opacity="0.85"/>
+  <rect x="186" y="152" width="56" height="250" rx="6" fill="#FFFFFF" opacity="0.55"/>
+  <rect x="252" y="152" width="240" height="250" rx="6" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="252" y="152" width="240" height="250" rx="6" fill="#3E8EDE" opacity="0.15"/>
+  <circle cx="372" cy="277" r="55" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="262" y="162" width="90" height="10" rx="5" fill="#2B6FB0"/>
+  <rect x="262" y="180" width="60" height="10" rx="5" fill="#8FA9BE"/>
+  <!-- height adjustable stand -->
+  <rect x="310" y="440" width="60" height="50" fill="#101418"/>
+  <rect x="270" y="490" width="140" height="14" rx="7" fill="#101418"/>
+  <rect x="470" y="440" width="180" height="46" rx="8" fill="#FFFFFF"/>
+  <text x="560" y="470" font-family="Arial" font-size="16" font-weight="700" fill="#2B6FB0" text-anchor="middle">FH-27MQHD</text>
+  <text x="340" y="560" font-family="Arial" font-size="17" font-weight="700" fill="#2B6FB0" text-anchor="middle">2560 × 1440 · ΔE &lt; 2 · USB-C 90W</text>
+</svg>

@@ -1,0 +1,6 @@
+# robots.txt for feihe-display.com
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: https://www.feihe-display.com/sitemap.xml

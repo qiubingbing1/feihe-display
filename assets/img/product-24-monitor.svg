@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="s4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4E9CE0"/><stop offset="1" stop-color="#8FC0EC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#EAF3FB"/>
+  <rect x="160" y="110" width="480" height="300" rx="12" fill="#101418"/>
+  <rect x="174" y="124" width="452" height="272" rx="4" fill="url(#s4)"/>
+  <!-- racing / motion UI -->
+  <path d="M174 396 L280 330 L370 360 L470 290 L560 320 L626 270 L626 396 Z" fill="#FFFFFF" opacity="0.55"/>
+  <path d="M174 396 L300 352 L420 372 L540 312 L626 336 L626 396 Z" fill="#FFFFFF" opacity="0.85"/>
+  <text x="480" y="180" font-family="Arial" font-size="44" font-weight="800" fill="#FFFFFF">100Hz</text>
+  <rect x="360" y="410" width="80" height="34" fill="#101418"/>
+  <rect x="300" y="444" width="200" height="14" rx="7" fill="#101418"/>
+  <text x="400" y="540" font-family="Arial" font-size="18" font-weight="700" fill="#2B6FB0" text-anchor="middle">FH-24M100 · 1ms MPRT</text>
+</svg>

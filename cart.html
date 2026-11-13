@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Feihe Displays</title>
+  <meta name="description" content="Review your Feihe cart and check out securely via Stripe Payment Link or PayPal. Compact smart TVs, digital TVs and monitors under 27 inches.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Feihe — home">
+        <img src="assets/img/logo.svg" alt="Feihe logo" width="38" height="38">
+        <span>Feihe<span class="logo-dot">.</span></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="products/index.html">Products</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="news/index.html">News</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="inquiry.html" class="btn btn-primary btn-sm nav-cta">Get a Quote</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link" aria-label="View shopping cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section" style="padding-top:48px;">
+    <div class="container">
+      <h1 style="margin-bottom:8px;">Your Cart</h1>
+      <p style="color:var(--muted); margin-bottom:36px;">Review your items, then check out securely — payments are handled by Stripe or PayPal, never by this website.</p>
+
+      <div style="display:grid; grid-template-columns: 1.6fr 1fr; gap:36px; align-items:start;" class="cart-layout">
+
+        <div>
+          <div class="cart-empty" id="cartEmpty" style="display:none;">
+            <h2>Your cart is empty</h2>
+            <p style="margin-top:10px;">Add a display to get started — every model ships in 48 hours.</p>
+            <a href="products/index.html" class="btn btn-primary">Browse Products</a>
+          </div>
+
+          <div id="cartTableWrap">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="cartItems"></tbody>
+            </table>
+            <p style="margin-top:16px;"><a href="products/index.html" class="btn btn-outline-blue btn-sm">← Continue shopping</a></p>
+          </div>
+        </div>
+
+        <aside class="cart-summary" id="cartSummaryWrap">
+          <h2>Order Summary</h2>
+          <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+          <div class="summary-row"><span>Shipping</span><span>Calculated at checkout</span></div>
+          <div class="summary-row"><span>Tax (VAT/Sales tax)</span><span>Calculated at checkout</span></div>
+          <div class="summary-row total"><span>Total</span><span id="cartTotal">$0.00</span></div>
+          <div class="checkout-btns">
+            <button type="button" class="btn btn-primary btn-block" data-checkout="stripe">Checkout with Stripe</button>
+            <button type="button" class="btn btn-outline btn-block" data-checkout="paypal">Checkout with PayPal</button>
+            <a href="inquiry.html" class="btn btn-black btn-block">Buying 10+? Get a Volume Quote</a>
+          </div>
+          <div class="pay-logos" aria-label="Accepted payment methods">
+            <span>VISA</span><span>Mastercard</span><span>Amex</span><span>Apple Pay</span><span>Google Pay</span><span>PayPal</span>
+          </div>
+          <p class="form-note" style="margin-top:14px;">🔒 Payments are processed on Stripe's or PayPal's secure hosted pages. This demo storefront does not process real payments.</p>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Checkout explanation modal (demo) -->
+  <div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal checkout-modal">
+      <button type="button" class="modal-close" data-modal-close aria-label="Close">&times;</button>
+      <h3 id="modalTitle">Checkout</h3>
+      <form id="checkoutForm">
+        <p id="checkoutMethodNote"></p>
+        <div class="form-field">
+          <label for="coName">Full name <span class="req">*</span></label>
+          <input id="coName" name="name" type="text" required autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="coEmail">Email <span class="req">*</span></label>
+          <input id="coEmail" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label for="coCountry">Country / Region <span class="req">*</span></label>
+          <input id="coCountry" name="country" type="text" required placeholder="Germany, United States...">
+        </div>
+        <p class="form-note">Demo checkout records the order for the Feihe admin. No real payment is captured.</p>
+        <button type="submit" class="btn btn-primary btn-block">Place order</button>
+      </form>
+      <div id="checkoutDone" hidden>
+        <p id="checkoutDoneText"></p>
+        <button type="button" class="btn btn-primary" data-modal-close style="margin-top:14px;">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="color:#fff;">
+          <img src="assets/img/logo.svg" alt="Feihe logo" width="38" height="38">
+          <span>Feihe<span class="logo-dot">.</span></span>
+        </a>
+        <p>Feihe designs and manufactures smart TVs, digital TVs and monitors under 27 inches for retail and business customers in the US and Europe.</p>
+        <div class="footer-certs"><span>CE</span><span>FCC</span><span>RoHS</span><span>UL</span><span>ENERGY STAR</span></div>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products/index.html">All Products</a></li>
+          <li><a href="products/index.html">Smart TVs</a></li>
+          <li><a href="products/index.html">Digital TVs</a></li>
+          <li><a href="products/index.html">Monitors</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="news/index.html">News &amp; Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="inquiry.html">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <ul class="footer-contact">
+          <li>✉ <a href="mailto:sales@feihe-display.com">sales@feihe-display.com</a></li>
+          <li>✆ <a href="tel:+8675588886666">+86 755 8888 6666</a></li>
+          <li>✆ <a href="https://wa.me/8613800000000" rel="noopener" target="_blank">WhatsApp: +86 138 0000 0000</a></li>
+          <li>⚲ Bao'an District, Shenzhen, China</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Feihe Display Technology Co., Ltd. All rights reserved.</span>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="shipping-returns.html">Shipping &amp; Returns</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/store.js?v=2"></script>
+  <script src="assets/js/main.js?v=2"></script>
+  <style>
+    @media (max-width: 768px) {
+      .cart-layout { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</body>
+</html>

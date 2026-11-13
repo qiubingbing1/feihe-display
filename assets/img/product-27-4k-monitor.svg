@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="s2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4E9CE0"/><stop offset="1" stop-color="#8FC0EC"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#EAF3FB"/>
+  <rect x="130" y="90" width="540" height="340" rx="12" fill="#101418"/>
+  <rect x="144" y="104" width="512" height="312" rx="4" fill="url(#s2)"/>
+  <!-- photo editing layout -->
+  <rect x="168" y="128" width="380" height="230" rx="6" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="168" y="128" width="380" height="230" rx="6" fill="#3E8EDE" opacity="0.18"/>
+  <circle cx="358" cy="243" r="60" fill="#FFFFFF" opacity="0.85"/>
+  <circle cx="358" cy="243" r="40" fill="#5AA7E8" opacity="0.7"/>
+  <rect x="562" y="128" width="80" height="230" rx="6" fill="#FFFFFF" opacity="0.55"/>
+  <rect x="572" y="140" width="60" height="12" rx="6" fill="#2B6FB0"/>
+  <rect x="572" y="162" width="60" height="12" rx="6" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="572" y="184" width="60" height="12" rx="6" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="168" y="370" width="474" height="26" rx="6" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="400" y="430" width="70" height="40" fill="#101418"/>
+  <rect x="330" y="470" width="210" height="16" rx="8" fill="#101418"/>
+  <text x="400" y="560" font-family="Arial" font-size="18" font-weight="700" fill="#2B6FB0" text-anchor="middle">FH-27M4K · 3840 × 2160</text>
+</svg>

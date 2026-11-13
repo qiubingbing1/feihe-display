@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#EAF3FB"/>
+  <!-- ultra-slim side profile -->
+  <rect x="180" y="220" width="440" height="18" rx="9" fill="#101418"/>
+  <rect x="196" y="224" width="408" height="10" rx="5" fill="#5AA7E8"/>
+  <rect x="180" y="238" width="440" height="6" rx="3" fill="#2A3138"/>
+  <!-- stand -->
+  <rect x="370" y="244" width="60" height="120" fill="#101418"/>
+  <rect x="300" y="364" width="200" height="18" rx="9" fill="#101418"/>
+  <!-- dimension arrows -->
+  <g stroke="#2B6FB0" stroke-width="3" fill="none">
+    <path d="M180 180 v-30 M620 180 v-30 M180 150 h440"/>
+    <path d="M180 150 l10 -8 M180 150 l10 8 M620 150 l-10 -8 M620 150 l-10 8"/>
+  </g>
+  <text x="400" y="132" font-family="Arial" font-size="17" font-weight="700" fill="#2B6FB0" text-anchor="middle">7.9 mm frameless design</text>
+  <text x="400" y="470" font-family="Arial" font-size="18" font-weight="700" fill="#2B6FB0" text-anchor="middle">VESA 100 × 100 · Wall-mountable</text>
+</svg>

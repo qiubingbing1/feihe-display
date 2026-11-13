@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="s1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5AA7E8"/><stop offset="1" stop-color="#9CCBF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#EAF3FB"/>
+  <rect x="150" y="110" width="500" height="310" rx="14" fill="#101418"/>
+  <rect x="164" y="124" width="472" height="282" rx="6" fill="url(#s1)"/>
+  <!-- streaming UI -->
+  <rect x="192" y="152" width="150" height="14" rx="7" fill="#FFFFFF" opacity="0.92"/>
+  <rect x="192" y="178" width="220" height="10" rx="5" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="192" y="210" width="132" height="76" rx="8" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="338" y="210" width="132" height="76" rx="8" fill="#FFFFFF" opacity="0.35"/>
+  <rect x="484" y="210" width="132" height="76" rx="8" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="192" y="306" width="424" height="70" rx="10" fill="#FFFFFF" opacity="0.85"/>
+  <rect x="206" y="322" width="120" height="10" rx="5" fill="#2B6FB0"/>
+  <rect x="206" y="344" width="220" height="10" rx="5" fill="#8FA9BE"/>
+  <rect x="360" y="420" width="80" height="34" fill="#101418"/>
+  <rect x="290" y="454" width="220" height="14" rx="7" fill="#101418"/>
+  <rect x="560" y="430" width="180" height="46" rx="8" fill="#FFFFFF"/>
+  <rect x="560" y="430" width="180" height="46" rx="8" fill="#101418" opacity="0"/>
+  <text x="650" y="460" font-family="Arial" font-size="17" font-weight="700" fill="#2B6FB0" text-anchor="middle">FH-24STV</text>
+</svg>

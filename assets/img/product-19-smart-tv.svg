@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="s5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5AA7E8"/><stop offset="1" stop-color="#9CCBF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#EAF3FB"/>
+  <!-- compact kitchen TV -->
+  <rect x="230" y="150" width="340" height="220" rx="12" fill="#101418"/>
+  <rect x="242" y="162" width="316" height="196" rx="6" fill="url(#s5)"/>
+  <rect x="264" y="184" width="120" height="12" rx="6" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="264" y="208" width="90" height="10" rx="5" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="264" y="236" width="110" height="70" rx="8" fill="#FFFFFF" opacity="0.45"/>
+  <rect x="388" y="236" width="110" height="70" rx="8" fill="#FFFFFF" opacity="0.7"/>
+  <rect x="264" y="318" width="272" height="26" rx="8" fill="#FFFFFF" opacity="0.85"/>
+  <rect x="380" y="370" width="40" height="26" fill="#101418"/>
+  <rect x="330" y="396" width="140" height="12" rx="6" fill="#101418"/>
+  <text x="400" y="470" font-family="Arial" font-size="18" font-weight="700" fill="#2B6FB0" text-anchor="middle">FH-195STV · Compact Smart TV</text>
+</svg>
